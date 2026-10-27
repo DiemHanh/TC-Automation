@@ -1,4 +1,4 @@
-# Diem Hanh Nguyen
+# TC-Automation
 
 Automation test cho https://the-internet.herokuapp.com, dùng Playwright + TypeScript theo POM.
 
