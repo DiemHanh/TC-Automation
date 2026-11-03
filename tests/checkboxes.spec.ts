@@ -1,4 +1,4 @@
-import { test, expect } from '../fixtures/pages.fixture';
+import { test, expect } from '../fixtures';
 
 test('TC03: Checkboxes - Check to a box', async ({ checkboxesPage }) => {
   await test.step('2. Navigate to https://the-internet.herokuapp.com/checkboxes', async () => {

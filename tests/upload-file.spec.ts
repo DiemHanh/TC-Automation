@@ -1,4 +1,4 @@
-import { test, expect } from '../fixtures/pages.fixture';
+import { test, expect } from '../fixtures';
 import { uploadFile } from '../test-data/testData';
 
 test('TC07: Upload a file', async ({ uploadPage }) => {
