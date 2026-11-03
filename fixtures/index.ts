@@ -6,12 +6,13 @@ import { test as dropdownTest } from './dropdown.fixture';
 import { test as multipleSelectTest } from './multiple-select.fixture';
 import { test as statusCodesTest } from './status-codes.fixture';
 import { test as uploadTest } from './upload.fixture';
-import { test as addRemoveElementsTest } from './add-remove-elements.fixture';
-import { test as inputsTest } from './inputs.fixture';
-import { test as javaScriptAlertsTest } from './javascript-alerts.fixture';
-import { test as dynamicControlsTest } from './dynamic-controls.fixture';
-import { test as hoversTest } from './hovers.fixture';
-import { test as keyPressesTest } from './key-presses.fixture';
+import { test as webTableTest } from './web-table.fixture';
+import { test as dragAndDropTest } from './drag-and-drop.fixture';
+import { test as horizontalSliderTest } from './horizontal-slider.fixture';
+import { test as contextMenuTest } from './context-menu.fixture';
+import { test as downloadTest } from './download.fixture';
+import { test as brokenImagesTest } from './broken-images.fixture';
+import { test as todoTest } from './todo.fixture';
 
 export const test = mergeTests(
   loginTest,
@@ -21,12 +22,13 @@ export const test = mergeTests(
   multipleSelectTest,
   statusCodesTest,
   uploadTest,
-  addRemoveElementsTest,
-  inputsTest,
-  javaScriptAlertsTest,
-  dynamicControlsTest,
-  hoversTest,
-  keyPressesTest,
+  webTableTest,
+  dragAndDropTest,
+  horizontalSliderTest,
+  contextMenuTest,
+  downloadTest,
+  brokenImagesTest,
+  todoTest,
 );
 
 export { expect } from '@playwright/test';

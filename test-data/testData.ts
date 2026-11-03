@@ -11,3 +11,9 @@ export const messages = {
 };
 
 export const uploadFile = path.join(__dirname, 'files', 'bb.txt');
+
+export const downloadFolder = path.join(__dirname, '..', 'download');
+
+export const jpegFile = path.join(__dirname, 'files', 'Jpeg_with_exif.jpeg');
+
+export const docFile = path.join(__dirname, 'files', 'doc.txt');
