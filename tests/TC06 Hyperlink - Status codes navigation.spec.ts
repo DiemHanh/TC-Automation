@@ -1,4 +1,4 @@
-import { test, expect } from '../fixtures';
+import { test, expect } from '../fixtures/pages.fixture';
 
 test('TC06: Hyperlink - Status codes navigation', async ({ page, statusCodesPage }) => {
   await test.step('2. Navigate to https://the-internet.herokuapp.com/status_codes', async () => {

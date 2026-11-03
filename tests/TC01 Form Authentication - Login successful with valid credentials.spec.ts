@@ -1,4 +1,4 @@
-import { test, expect } from '../fixtures';
+import { test, expect } from '../fixtures/pages.fixture';
 import { users, messages } from '../test-data/testData';
 
 test('TC01: Form Authentication - Login successful with valid credentials', async ({ page, loginPage, secureAreaPage }) => {

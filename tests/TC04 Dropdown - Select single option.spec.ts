@@ -1,4 +1,4 @@
-import { test, expect } from '../fixtures';
+import { test, expect } from '../fixtures/pages.fixture';
 
 test('TC04: Dropdown - Select single option', async ({ dropdownPage }) => {
   await test.step('2. Navigate to https://the-internet.herokuapp.com/dropdown', async () => {
