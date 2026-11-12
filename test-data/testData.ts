@@ -17,3 +17,5 @@ export const downloadFolder = path.join(__dirname, '..', 'download');
 export const jpegFile = path.join(__dirname, 'files', 'Jpeg_with_exif.jpeg');
 
 export const docFile = path.join(__dirname, 'files', 'doc.txt');
+
+export const screenshotFolder = path.join(__dirname, '..', 'screenshots');
