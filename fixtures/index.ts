@@ -13,6 +13,9 @@ import { test as contextMenuTest } from './contextMenu.fixture';
 import { test as downloadTest } from './download.fixture';
 import { test as brokenImagesTest } from './brokenImages.fixture';
 import { test as todoTest } from './todo.fixture';
+import { test as homeTest } from './home.fixture';
+import { test as nestedFramesTest } from './nestedFrames.fixture';
+import { test as javaScriptAlertsTest } from './javaScriptAlerts.fixture';
 
 export const test = mergeTests(
   loginTest,
@@ -29,6 +32,9 @@ export const test = mergeTests(
   downloadTest,
   brokenImagesTest,
   todoTest,
+  homeTest,
+  nestedFramesTest,
+  javaScriptAlertsTest,
 );
 
 export { expect } from '@playwright/test';
