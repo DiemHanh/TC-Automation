@@ -4,20 +4,20 @@ test('TC08: Web Table - Validate largest due person from a table', async ({ webT
   let rows: { firstName: string; lastName: string; due: string }[] = [];
   let maxPerson = { firstName: '', lastName: '', due: '' };
 
-  await test.step('2. Navigate to https://the-internet.herokuapp.com/tables', async () => {
+  await test.step('1. Open the tables page', async () => {
     await webTablePage.open();
   });
 
-  await test.step('3. Focus on #table1', async () => {
+  await test.step('2. Verify table 1 is shown', async () => {
     await expect(webTablePage.table1).toBeVisible();
   });
 
-  await test.step('4. Extract all rows (firstName, lastName, due amount)', async () => {
+  await test.step('3. Get first name, last name and due of all rows in table 1', async () => {
     rows = await webTablePage.getAllRows();
     expect(rows.length).toBe(4);
   });
 
-  await test.step('5. Find the person with the largest due amount', async () => {
+  await test.step('4. Find the person with the largest due', async () => {
     maxPerson = rows[0];
     for (const row of rows) {
       const due = parseFloat(row.due.replace('$', ''));
@@ -28,7 +28,7 @@ test('TC08: Web Table - Validate largest due person from a table', async ({ webT
     }
   });
 
-  await test.step('6. Verify the person\'s full name matches the value shown on the page', async () => {
+  await test.step('5. Verify the person with the largest due is "Jason Doe"', async () => {
     const fullName = maxPerson.firstName + ' ' + maxPerson.lastName;
     expect(fullName).toBe('Jason Doe');
     await expect(webTablePage.rowByDue(maxPerson.due)).toContainText(maxPerson.firstName);
